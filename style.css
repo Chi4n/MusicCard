@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-image: url(./img/bg.jpg);
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  background-color: #121826a6;
+  height: 670px;
+  width: 430px;
+  margin: auto;
+  position: relative;
+  margin-top: 100px;
+  display: grid;
+  border-radius: 30px;
+  box-shadow: 5px 3px 5px -1px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 5px 3px 5px -1px rgba(0, 0, 0, 0.30);
+  -moz-box-shadow: 5px 3px 5px -1px rgba(0, 0, 0, 0.30);
+}
+
+.container img {
+  background-color: aqua;
+  height: 350px;
+  border-radius: 30px;
+  margin: 12px auto;
+  margin-top: 30px;
+  box-shadow: 5px 3px 5px -1px rgba(0, 0, 0, 0.27);
+  -webkit-box-shadow: 5px 3px 5px -1px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 5px 3px 5px -1px rgba(0, 0, 0, 0.27);
+}
+.song-details {
+  background-color: rgba(9, 233, 233, 0);
+  margin-bottom: 120px;
+  text-align: center;
+  padding-top: 10px;
+}
+.song-details .song-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #e5e7eb;
+}
+.song-details .artist {
+  color: #4d5562;
+  font-size: 17;
+}
+
+.progress-bar {
+  background-color: #e5e7eb;
+  position: relative;
+  bottom: 90px;
+  margin: 10px;
+  height: 30px;
+}
+.progress-bar input {
+}
