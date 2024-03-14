@@ -19,8 +19,8 @@ body {
   display: grid;
   border-radius: 30px;
   box-shadow: 5px 3px 5px -1px rgba(0, 0, 0, 0.32);
-  -webkit-box-shadow: 5px 3px 5px -1px rgba(0, 0, 0, 0.30);
-  -moz-box-shadow: 5px 3px 5px -1px rgba(0, 0, 0, 0.30);
+  -webkit-box-shadow: 5px 3px 5px -1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 3px 5px -1px rgba(0, 0, 0, 0.3);
 }
 
 .container img {
@@ -49,12 +49,73 @@ body {
   font-size: 17;
 }
 
-.progress-bar {
-  background-color: #e5e7eb;
+.range {
+  background-color: #d4b3c100;
   position: relative;
-  bottom: 90px;
-  margin: 10px;
-  height: 30px;
+  width: 100%;
+  bottom: 100px;
+  margin: auto;
+  display: flex; /* Establece el padre como flexbox */
+  justify-content: center; /* Centra horizontalmente los elementos hijos */
 }
-.progress-bar input {
+
+.range-input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 85%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  height: 5px;
+}
+
+
+
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  border-radius: 30px;
+  width: 20px;
+  background-color: #C93B76;
+  border: none;
+ 
+}
+
+.range-input::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #C93B76;
+  border-radius: 50%;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+
+.controls{
+  background-color: #0adf5100;
+  position: relative;
+  bottom: 30px;
+  width: 60%;
+  height: 80px;
+  display: flex;
+  margin: auto;
+  
+}
+.material-symbols-outlined{
+  background-color: #0a0a0aad;
+   margin: auto;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  border: none;
+  color:#e5e7eb;
+  
+  
+
+}
+.Play{
+  background-color: #C93B76;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
