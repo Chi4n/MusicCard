@@ -55,8 +55,8 @@ body {
   width: 100%;
   bottom: 100px;
   margin: auto;
-  display: flex; /* Establece el padre como flexbox */
-  justify-content: center; /* Centra horizontalmente los elementos hijos */
+  display: flex; 
+  justify-content: center; 
 }
 
 .range-input {
@@ -141,4 +141,8 @@ body {
   cursor: pointer;
   text-shadow: 0 0 10px #ffffff3b;
   
+}
+.playpause-track:hover{
+  text-shadow: 0 0 10px #ffffff9f;
+  transition: all 1s ease;
 }

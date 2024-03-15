@@ -1,16 +1,16 @@
 
-const playPause_btn  = document.querySelector("playpause-track")
+const music_List = [
+  {
+    img: "./img/cover-1.png",
+    name: "Lost in the City Lights",
+    artist: "Cosmo Sheldrake",
+    music: "audios/lost-in-city-lights-145038.mp3",
+  },
+  {
+    img: "img/you were there for me .jpg",
+    name: "you were there for me ",
+    artist: " Henry Moodie",
+    music: "audios/lost-in-city-lights-145038.mp3",
+  },
+];
 
-
-
-//Creamos el Evento del Range
-const sliderEl = document.querySelector("#range2");
-const sliderValue = document.querySelector(".value2");
-
-sliderEl.addEventListener("input", (event) => {
-  const tempSliderValue = event.target.value;
-
-  const progress = (tempSliderValue / sliderEl.max) * 100;
-
-  sliderEl.style.background = `linear-gradient(to right, #C93B76 ${progress}%, #ccccccc9 ${progress}%)`;
-});
